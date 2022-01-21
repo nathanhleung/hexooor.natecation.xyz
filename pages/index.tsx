@@ -1,8 +1,9 @@
-import { Box, Button, Flex, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Icon, Link, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
 import Dropzone from "react-dropzone";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 import styles from "../styles/Home.module.css";
 
 const EXAMPLES = [
@@ -179,14 +180,41 @@ const Home: NextPage = () => {
           </Text>
         )}
       </Box>
-      <footer className={styles.footer}>
-        <Text>
-          <HexooorLink href="https://twitter.com/nathanhleung" mr={1}>
-            @nathanhleung
-          </HexooorLink>{" "}
-          (not affiliated with twitter)
-        </Text>
-      </footer>
+      <Box as="footer" flexDirection="column" className={styles.footer}>
+        <Flex>
+          <Link
+            href="https://twitter.com/nathanhleung"
+            target="_blank"
+            fontSize={30}
+            m={3}
+            opacity={0.5}
+            _hover={{
+              opacity: 0.25,
+            }}
+          >
+            <Icon as={FaTwitter} />
+          </Link>{" "}
+          <Link
+            href="https://github.com/nathanhleung/hexooor"
+            target="_blank"
+            fontSize={30}
+            m={3}
+            opacity={0.5}
+            _hover={{
+              opacity: 0.25,
+            }}
+          >
+            <Icon as={FaGithub} />
+          </Link>
+        </Flex>
+        <Box mt={3}>
+          <Text fontSize="xs">
+            This project is not affiliated with Twitter. All product names,
+            logos, brands, trademarks and registered trademarks are property of
+            their respective owners.
+          </Text>
+        </Box>
+      </Box>
     </Flex>
   );
 };
