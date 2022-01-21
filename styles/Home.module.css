@@ -1,9 +1,10 @@
 .container {
+  min-height: 100vh;
   padding: 0 2rem;
+  background-color: #f6f9f9;
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
