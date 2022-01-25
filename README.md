@@ -1,8 +1,13 @@
 # Hexooor
 
-Generate hexagonal profile pictures client-side using HTML5 canvas.
+Generate hexagonal Twitter NFT profile pictures client-side using HTML5 canvas.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Demo
+
+https://hexooor.vercel.app/
+
+![App on first load](./screenshots/landing.png)
+![App after image has been selected](./screenshots/selected-image.png)
 
 ## Getting Started
 
