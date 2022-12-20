@@ -4,7 +4,7 @@ Generate hexagonal Twitter NFT profile pictures client-side using HTML5 canvas.
 
 ## Demo
 
-https://hexooor.vercel.app/
+https://hexooor.natecation.xyz
 
 ![App on first load](./screenshots/landing.png)
 ![App after image has been selected](./screenshots/selected-image.png)
